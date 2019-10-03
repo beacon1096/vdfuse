@@ -1,3 +1,4 @@
+# makefile and svn detrius
 .svn
 Makefile.in
 /autom4te.cache
@@ -7,10 +8,25 @@ Makefile.in
 /depcomp
 /install-sh
 /missing
-*.o
 .deps/
 Makefile
 config.log
 src/config.h
 src/stamp-h1
+config.guess
+config.in
+config.status
+config.sub
+
+# backups
+*~
+
+# builds
+*.o
 vdfuse
+
+# current errors from `domake make`
+errs
+
+# ignore include because we'll be always updating it.
+include/
