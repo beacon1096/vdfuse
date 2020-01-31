@@ -126,8 +126,8 @@ PVDISK         hdDisk;
 PVDINTERFACE     pVDifs = NULL;
 VDINTERFACE      vdError;
 VDINTERFACEERROR vdErrorCallbacks = {
-  .cbSize = sizeof(VDINTERFACEERROR),
-  .enmInterface = VDINTERFACETYPE_ERROR,
+  .Core = { .cbSize = sizeof(VDINTERFACEERROR),
+  .enmInterface = VDINTERFACETYPE_ERROR },
   .pfnError = vdErrorCallback };
 
 // Partition table information
