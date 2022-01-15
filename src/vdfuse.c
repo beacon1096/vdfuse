@@ -243,6 +243,7 @@ int main (int argc, char **argv) {
 				 break;
 	  case 'f' : imagefilename =  (char *)optarg; break;
 	  case 'd' : foreground = 1; debug = 1;       break;
+	  case 'o' : break; //avoid exiting when FUSE calls it with automatically added argument -o
 	  case 'h' : usageAndExit(NULL);
 	  case '?' : usageAndExit("Unknown option");
 	}
